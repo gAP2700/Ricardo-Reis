@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ricardo Reis · O Poeta Clássico</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#f4eddc;--pg:#fbf7ec;--tx:#231f1a;--mu:#6b6252;--rl:#cfc3a8;--ac:#7a1f2b;--hl:#ecdcb6}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#1a1612;--pg:#221d17;--tx:#eee5d2;--mu:#a89d86;--rl:#4a4033;--ac:#e0889a;--hl:#3a2f22}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#1a1612;--pg:#221d17;--tx:#eee5d2;--mu:#a89d86;--rl:#4a4033;--ac:#e0889a;--hl:#3a2f22}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 56px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:18px/1.75 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+.w{max-width:1080px;margin:auto;padding:0 24px}
+.mast{text-align:center;padding:64px 0 34px;border-bottom:3px double var(--rl)}
+.kick{font:600 .78rem/1 system-ui,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--ac)}
+h1{font-size:clamp(2.4rem,8vw,4.6rem);line-height:1.05;margin:.3em 0 .15em;font-weight:500;letter-spacing:-.01em}
+.lede{font-style:italic;color:var(--mu);max-width:620px;margin:0 auto;font-size:1.12rem}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--rl);z-index:5;display:flex;justify-content:center;gap:4px;overflow-x:auto;padding:10px 12px;font:.82rem system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+nav a{color:var(--mu);text-decoration:none;padding:6px 14px;white-space:nowrap}
+nav a:hover{color:var(--ac)}
+section{padding:60px 0 8px}
+.num{font:600 .8rem system-ui,sans-serif;letter-spacing:.2em;color:var(--ac);text-transform:uppercase}
+h2{font-size:clamp(1.8rem,5vw,2.6rem);font-weight:500;margin:.15em 0 .5em;line-height:1.15}
+h3{font-size:1.3rem;font-weight:600;margin:1.6em 0 .2em}
+.two{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:48px;align-items:start}
+.prose p{margin:0 0 1.1em;text-align:justify;hyphens:auto}
+.prose>p:first-of-type::first-letter{float:left;font-size:4.2rem;line-height:.8;padding:.08em .1em 0 0;color:var(--ac)}
+.ficha{background:var(--pg);border:1px solid var(--rl);border-top:4px solid var(--ac);padding:22px 24px;position:sticky;top:70px;font-size:.95rem;line-height:1.55}
+.ficha h4{margin:0 0 12px;font:600 .75rem system-ui,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--ac)}
+.ficha dt{font:600 .72rem system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--mu);margin-top:12px}
+.ficha dd{margin:2px 0 0}
+.pull{margin:2em 0;padding:18px 0;border-top:1px solid var(--ac);border-bottom:1px solid var(--ac);text-align:center;font-size:1.5rem;font-style:italic;line-height:1.4}
+.pull small{display:block;font:.75rem system-ui,sans-serif;letter-spacing:.15em;text-transform:uppercase;color:var(--mu);margin-top:6px;font-style:normal}
+.poem{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:40px;align-items:start;margin-top:20px}
+.page{background:var(--pg);border:1px solid var(--rl);padding:30px 30px 20px;box-shadow:0 1px 0 var(--rl),0 10px 30px -18px #0006}
+.page h3{margin:0;text-align:center;font-size:1.25rem;font-weight:500;font-style:italic}
+.page .by{text-align:center;font:.72rem system-ui,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--mu);margin-bottom:18px}
+.st{margin:0 0 16px;padding:4px 0}
+.v{cursor:pointer;padding:1px 8px;border-radius:3px;line-height:1.55;font-size:1.02rem}
+.v:hover,.v:focus-visible{background:var(--hl);outline:none}
+.v.on{background:var(--hl);color:var(--ac)}
+.sc{margin:2px 8px 6px;padding:8px 12px;border-left:3px solid var(--ac);background:var(--bg);font:.88rem/1.9 system-ui,sans-serif}
+.sc span{display:inline-block;margin-right:5px;padding:0 3px;border-radius:3px;border:1px solid var(--rl)}
+.sc .t{opacity:.5;border-style:dashed}
+.sc .k{background:var(--ac);color:var(--pg);border-color:var(--ac);font-weight:700}
+.sc b{display:block;color:var(--ac);font-weight:600}
+.hint{text-align:center;font:.78rem system-ui,sans-serif;color:var(--mu);margin:8px 0 0}
+.an{position:sticky;top:70px}
+.tabs{display:flex;border-bottom:1px solid var(--rl);font:.8rem system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.tabs button{background:none;border:0;border-bottom:3px solid transparent;padding:12px 16px;color:var(--mu);cursor:pointer;font:inherit}
+.tabs button[aria-selected="true"]{color:var(--ac);border-color:var(--ac);font-weight:700}
+.pane{padding:20px 4px;max-height:640px;overflow-y:auto;font-size:1rem;line-height:1.7}
+.pane h4{margin:1.1em 0 .1em;font:700 .78rem system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--ac)}
+.pane h4:first-child{margin-top:0}
+.pane p{margin:0 0 .8em}
+.quiz .q{background:var(--pg);border:1px solid var(--rl);padding:20px 24px;margin:14px 0}
+.opt{display:block;width:100%;text-align:left;background:none;border:1px solid var(--rl);color:var(--tx);padding:10px 14px;margin:8px 0;font:inherit;font-size:.98rem;cursor:pointer;border-radius:2px}
+.opt:hover{border-color:var(--ac)}
+.opt.ok{background:color-mix(in srgb,#2f7d4f 22%,transparent);border-color:#2f7d4f}
+.opt.no{background:color-mix(in srgb,var(--ac) 22%,transparent);border-color:var(--ac)}
+.sco{font:700 .85rem system-ui,sans-serif;color:var(--ac);letter-spacing:.1em}
+.btn{background:var(--ac);color:var(--pg);border:0;padding:10px 20px;font:600 .85rem system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;cursor:pointer}
+footer{margin-top:70px;border-top:3px double var(--rl);text-align:center;padding:26px 24px 40px;color:var(--mu);font:.82rem system-ui,sans-serif;letter-spacing:.06em}
+@media(max-width:860px){.two,.poem{grid-template-columns:1fr}.ficha,.an{position:static}.pane{max-height:none}body{font-size:17px}.page{padding:22px 14px 14px}}
+</style>
+</head>
+<body>
+<div class="w">
+<header class="mast">
+<div class="kick">Português · Poesia dos Heterónimos</div>
+<h1>Ricardo Reis</h1>
+<p class="lede">O poeta clássico: disciplina, serenidade e o “fado voluntário” de quem escolhe ser espectador do mundo.</p>
+</header>
+</div>
+<nav><a href="#perfil">Perfil</a><a href="#pensamento">Pensamento</a><a href="#poema">O poema</a><a href="#interface">Heteronímia</a><a href="#quiz">Quiz</a></nav>
+<div class="w">
+
+<section id="perfil">
+<div class="num">I · Contextualização</div>
+<h2>Um clássico por escolha</h2>
+<div class="two">
+<div class="prose">
+<p>Ricardo Reis é apresentado por Fernando Pessoa como um médico nascido no Porto em 1887, educado num colégio de jesuítas. Por convicções monárquicas, expatriou-se voluntariamente para o Brasil em 1919. Fisicamente, seria um pouco mais baixo e forte do que Caeiro, mas seco, de cara rapada e tez morena mate: uma figura sóbria, que condiz com a poesia contida que escreve.</p>
+<p>Produto do fingimento artístico de Pessoa, Reis é o poeta clássico por excelência, profundamente marcado pela cultura greco-romana. Latinista por educação alheia e semi-helenista por educação própria, cultiva a disciplina racional tanto na condução da vida como no ato da escrita. A sua obra concentra-se nas <i>Odes</i>, dirigidas a figuras como Lídia, Neera ou Cloe, nomes que evocam diretamente a poesia de Horácio.</p>
+<p>Reis aceita uma mundividência pagã que reconhece a existência dos deuses antigos e olha para o deus judaico-cristão como apenas mais um entre muitos. É um paganismo menos devoção do que atitude: os deuses são modelos de serenidade e de indiferença, e não entidades a quem se pede ajuda. Esta escolha de vida condiciona tudo o que escreve.</p>
+<div class="pull">“Sábio é o que se contenta com o espetáculo do Mundo.”<small>Ricardo Reis</small></div>
+</div>
+<aside class="ficha"><h4>Ficha biográfica</h4><dl>
+<dt>Nascimento</dt><dd>1887, Porto</dd>
+<dt>Formação</dt><dd>Colégio de jesuítas; latinista e semi-helenista</dd>
+<dt>Profissão</dt><dd>Médico</dd>
+<dt>Convicções</dt><dd>Monárquico</dd>
+<dt>Exílio</dt><dd>Brasil, 1919</dd>
+<dt>Aspeto</dt><dd>Mais baixo e forte que Caeiro, seco, de cara rapada e tez morena mate</dd>
+<dt>Mundividência</dt><dd>Neopagã, epicurista e estoica</dd>
+<dt>Estilo</dt><dd>Odes latinizantes</dd></dl></aside>
+</div>
+</section>
+
+<section id="pensamento">
+<div class="num">II · O “Sistema Operativo”</div>
+<h2>Fado, epicurismo, estoicismo e ataraxia</h2>
+<div class="prose" style="max-width:740px">
+<p>Na cosmovisão de Reis, até os deuses estão submetidos a uma força superior e soberana: o Destino, ou Fado, calmo e inexorável. Ciente de que é impossível vencê-lo, Reis não se revolta; propõe antes um “fado voluntário”, que consiste em aceitar com tranquilidade as leis da Natureza e o curso da vida, transformando a necessidade numa escolha. Ninguém escapa ao Fado, mas pode-se escolher a atitude perante ele.</p>
+<h3>Epicurismo</h3>
+<p>Como resposta às angústias da existência, Reis adota a filosofia de Epicuro, que defende a procura da serenidade e a fruição moderada dos prazeres da vida. Segue o princípio horaciano do <i>carpe diem</i> (aproveitar o momento presente), mas sem excessos, paixões ou compromissos emocionais intensos: sabe que o envolvimento profundo resulta inevitavelmente em sofrimento quando o momento acaba. Gozar, sim; mas só o que não cobra um preço.</p>
+<h3>Estoicismo</h3>
+<p>O estoicismo complementa o epicurismo naquilo que este não consegue evitar: a dor, a doença, a velhice e a morte. Esta doutrina exige autodisciplina, resignação perante a frágil condição humana, abdicação dos sentimentos intensos e aceitação impassível do sofrimento. Se o epicurismo ensina a escolher o prazer calmo, o estoicismo ensina a suportar o que não se escolhe.</p>
+<h3>Ataraxia e posição de espectador</h3>
+<p>O objetivo supremo destas escolhas é a <b>ataraxia</b>: a ausência total de perturbação da alma e a indiferença perante a dor e as paixões. Para evitar a dor de viver, Reis escolhe não ser ator na vida, recusando a ação, e torna-se um espectador passivo e disciplinado da existência. É uma sabedoria de quem prefere ver passar o rio a atirar-se a ele, e é exatamente essa imagem que a ode analisada a seguir põe em cena.</p>
+</div>
+</section>
+
+<section id="poema">
+<div class="num">III · Análise textual</div>
+<h2>“Vem sentar-te comigo, Lídia, à beira-rio”</h2>
+<p style="max-width:740px;color:var(--mu)">Lê o poema completo à esquerda. <b>Clica num verso</b> para ver a sua medida (contagem silábica até à última sílaba tónica) e a leitura da estrofe correspondente à direita. Datado de 12-6-1914.</p>
+<div class="poem">
+<div class="page"><h3>Vem sentar-te comigo, Lídia, à beira-rio</h3><div class="by">Ricardo Reis · Odes</div><div id="po"></div><p class="hint">As sinalefas (elisões) assinalam-se com ‿ ; a sílaba tónica final está a cheio.</p></div>
+<div class="an"><div class="tabs" role="tablist" id="tb"></div><div class="pane" id="pn"></div></div>
+</div>
+</section>
+
+<section id="interface">
+<div class="num">IV · A “Interface” de Fernando Pessoa</div>
+<h2>Do pseudónimo ao heterónimo</h2>
+<div class="prose" style="max-width:740px">
+<p>Enquanto o pseudónimo consiste na utilização de um nome falso por parte de um autor para assinar a sua obra, a heteronímia em Pessoa vai muito além da assinatura: consiste na criação de individualidades literárias completas. Ricardo Reis não é Fernando Pessoa a usar um disfarce, mas uma entidade biográfica e artística própria, com data e local de nascimento, profissão (médico), opções políticas (monárquico), traços físicos, mundividência filosófica (neopagã, epicurista e estoica) e um estilo poético próprio (odes latinizantes).</p>
+<h3>A fragmentação do “eu” e o mundo digital</h3>
+<p>Ao criar heterónimos como Ricardo Reis, Pessoa fragmentou o seu “eu” para responder à impossibilidade de viver todas as perspetivas do mundo a partir de uma só identidade. No século XXI, este fenómeno antecipa a arquitetura das identidades digitais: o utilizador moderno não opera sob uma identidade única e estática, mas desdobra-se em múltiplos perfis ou avatares em rede, adaptando a sua linguagem, postura e filosofia ao contexto de cada plataforma.</p>
+<p>Assume, por exemplo, um perfil profissional, disciplinado e altamente regulado nas redes de âmbito corporativo ou académico, o que é análogo à postura estoico-clássica de Reis: contenção, autocontrolo, forma cuidada. Tal como Reis é uma “interface” de Pessoa para o classicismo, cada perfil digital é uma interface do utilizador para um contexto.</p>
+</div>
+</section>
+
+<section id="quiz" class="quiz">
+<div class="num">V · Avaliação</div>
+<h2>Quiz final <span class="sco" id="sc"></span></h2>
+<div id="qz"></div>
+<button class="btn" id="rs" hidden>Recomeçar</button>
+</section>
+</div>
+<footer>Recurso Educativo Digital · Português · Ricardo Reis, o poeta clássico</footer>
+
+<script>
+const $=s=>document.querySelector(s);
+const V=[
+["Vem sentar-te comigo, Lídia, à beira do rio.","Vem sen tar te co mi go Lí di a_à bei ra do *ri o"],
+["Sossegadamente fitemos o seu curso e aprendamos","Sos se ga da men te fi te mos o seu cur so_e_a pren *da mos"],
+["Que a vida passa, e não estamos de mãos enlaçadas.","Que_a vi da pas sa_e não es ta mos de mãos en la *ça das"],
+["(Enlacemos as mãos.)","En la ce mos as *mãos"],
+["Depois pensemos, crianças adultas, que a vida","De pois pen se mos cri an ças a dul tas que_a *vi da"],
+["Passa e não fica, nada deixa e nunca regressa,","Pas sa_e não fi ca na da dei xa_e nun ca re *gres sa"],
+["Vai para um mar muito longe, para ao pé do Fado,","Vai pa ra_um mar mui to lon ge pa ra_ao pé do *Fa do"],
+["Mais longe que os deuses.","Mais lon ge que_os *deu ses"],
+["Desenlacemos as mãos, porque não vale a pena cansarmo-nos.","De sen la ce mos as mãos por que não va le_a pe na can *sar mo nos"],
+["Quer gozemos, quer não gozemos, passamos como o rio.","Quer go ze mos quer não go ze mos pas sa mos co mo_o *ri o"],
+["Mais vale saber passar silenciosamente","Mais va le sa ber pas sar si len ci o sa *men te"],
+["E sem desassossegos grandes.","E sem de sas sos se gos *gran des"],
+["Sem amores, nem ódios, nem paixões que levantam a voz,","Sem a mo res nem ó dios nem pai xões que le van tam a *voz"],
+["Nem invejas que dão movimentos demais aos olhos,","Nem in ve jas que dão mo vi men tos de mais aos *o lhos"],
+["Nem cuidados, porque se os tivesse o rio sempre correria,","Nem cui da dos por que se_os ti ves se_o ri o sem pre cor re *ri a"],
+["E sempre iria ter ao mar.","E sem pre_i ri a ter ao *mar"],
+["Amemo-nos tranquilamente, pensando que podíamos,","A me mo nos tran qui la men te pen san do que po *dí a mos"],
+["Se quiséssemos, trocar beijos e abraços e carícias,","Se qui sés se mos tro car bei jos e_a bra ços e_a ca *rí ci as"],
+["Mas que mais vale estarmos sentados ao pé um do outro","Mas que mais va le_es tar mos sen ta dos ao pé um do_*ou tro"],
+["Ouvindo correr o rio e vendo-o.","Ou vin do cor rer o ri o_e *ven do_o"],
+["Colhamos flores, pega tu nelas e deixa-as","Co lha mos flo res pe ga tu ne las e *dei xa_as"],
+["No colo, e que o seu perfume suavize o momento —","No co lo_e que_o seu per fu me sua vi ze_o mo *men to"],
+["Este momento em que sossegadamente não cremos em nada,","Es te mo men to_em que sos se ga da men te não cre mos em *na da"],
+["Pagãos inocentes da decadência.","Pa gãos i no cen tes da de ca *dên cia"],
+["Ao menos, se for sombra antes, lembrar-te-ás de mim depois","Ao me nos se for som bra_an tes lem brar te_ás de mim de *pois"],
+["Sem que a minha lembrança te arda ou te fira ou te mova,","Sem que_a mi nha lem bran ça te_ar da_ou te fi ra_ou te *mo va"],
+["Porque nunca enlaçámos as mãos, nem nos beijámos","Por que nun ca_en la çá mos as mãos nem nos bei *já mos"],
+["Nem fomos mais do que crianças.","Nem fo mos mais do que cri *an ças"],
+["E se antes do que eu levares o óbolo ao barqueiro sombrio,","E se_an tes do que_eu le va res o_ó bo lo_ao bar quei ro som *bri o"],
+["Eu nada terei que sofrer ao lembrar-me de ti.","Eu na da te rei que so frer ao lem brar me de *ti"],
+["Ser-me-ás suave à memória lembrando-te assim — à beira-rio,","Ser me_ás sua ve_à me mó ria lem bran do te_as sim à bei ra *ri o"],
+["Pagã triste e com flores no regaço.","Pa gã tris te_e com flo res no re *ga ço"]];
+const R=["<b>Convite e lição.</b> Lídia, interlocutora fictícia (apóstrofe), é convidada a sentar-se e a observar o rio. O verbo “aprendamos” revela o tom didático: do curso da água retira-se uma lição, a de que a vida passa e os dois “não estamos de mãos enlaçadas”. O parêntese “(Enlacemos as mãos)” é um breve momento de hesitação, quase uma voz interior que contraria a lição.","<b>Fugacidade e Fado.</b> Os amantes são “crianças adultas”: inocentes, mas lúcidos. A vida passa sem deixar nada e sem regressar, e segue para o mar, imagem da morte, “ao pé do Fado”, mais longe que os próprios deuses. Aqui ouve-se a ideia central de Reis: o Destino está acima dos deuses.","<b>Renúncia e ataraxia.</b> “Desenlacemos as mãos”: a renúncia ao contacto é a conclusão prática da lição do rio. Quer gozem, quer não, passam como a água. Resta o ideal da serenidade, “passar silenciosamente / E sem desassossegos grandes”, isto é, a ataraxia.","<b>As paixões como perturbação.</b> A sequência anafórica “Sem… nem… nem… nem” enumera o que perturba a alma: amores, ódios, paixões, invejas, cuidados. O rio é o modelo: não tem cuidados e chega ao mar na mesma. Sofrer não altera o destino, só o torna pior.","<b>Epicurismo: a contemplação.</b> Podiam trocar beijos e carícias, mas o poeta prefere a quietude: sentados lado a lado, ouvindo e vendo correr o rio. O gerúndio (“Ouvindo”, “vendo-o”) sugere uma ação contínua e passiva, e o amor transforma-se em contemplação serena. Esta é a posição de espectador.","<b><i>Carpe diem</i> sem crença.</b> As flores e o perfume “suavizam o momento”: um prazer moderado, sem excesso. Os amantes “não cremos em nada” e são “pagãos inocentes da decadência”, expressão que sugere a consciência de pertencer a um tempo de declínio dos antigos valores, vivido sem culpa.","<b>A memória sem dor.</b> O poeta antecipa a morte de um dos dois e pensa na lembrança. Porque “nunca enlaçámos as mãos, nem nos beijámos”, a memória não “arda”, não “fira”, não “mova”. A renúncia é, afinal, uma estratégia para evitar o sofrimento futuro.","<b>O barqueiro e a melancolia.</b> O “óbolo ao barqueiro sombrio” (a moeda para Caronte) evoca a mitologia clássica da morte. A imagem final, Lídia “pagã triste e com flores no regaço”, deixa transparecer, sob a serenidade pretendida, uma melancolia que a doutrina não consegue apagar por completo."];
+const F=`<h4>Género e estrutura</h4><p>Ode clássica, de oito estrofes regulares de quatro versos: três versos longos seguidos de um verso curto. Clica nos versos para veres a contagem de cada um.</p><h4>Métrica e rima</h4><p>Regularidade estrófica e ausência de rima (versos brancos). O poema imita medidas greco-latinas, por isso a contagem silábica dos versos longos não é constante (cerca de 13 a 17 sílabas métricas) e os versos curtos variam entre 5 e 10. <i>Nota: a escansão aqui apresentada faz sinalefa entre vogais átonas contíguas; podem existir outras leituras.</i></p><h4>Linguagem e sintaxe</h4><p>Linguagem culta, erudita e latinizante, com construções subordinadas e inversão da ordem direta (“Ser-me-ás suave à memória”), influência da sintaxe latina.</p><h4>Tom e modos verbais</h4><p>Tom coloquial pela presença de uma interlocutora fictícia, conjugado com um tom didático e moralista. Imperativo (“Vem sentar-te”), conjuntivo com valor exortativo (“fitemos”, “aprendamos”, “enlacemos”, “colhamos”), presente do indicativo, 1.ª pessoa do plural e gerúndio com valor imperfetivo (“Ouvindo”, “lembrando-te”).</p><h4>Recursos expressivos</h4><p><b>Apóstrofe</b> (Lídia); <b>metáfora</b> (o rio como a vida); <b>anáfora</b> (“Sem… nem… nem”); <b>hipérbato e anástrofe</b>; <b>aliteração</b> em /s/ (“Sossegadamente fitemos o seu curso”); <b>adjetivação erudita</b> (“barqueiro sombrio”).</p>`;
+const FC=`<h4>Rigor formal, rigor de vida</h4><p>A extrema rigidez da forma, a disciplina métrica e a complexidade sintática espelham, no plano poético, a própria disciplina racional, a contenção das emoções (estoicismo) e o autocontrolo que Reis exige na sua vida.</p><h4>A ode como refúgio</h4><p>A arquitetura formalmente perfeita da ode funciona como um refúgio de ordem e beleza perante o caos e a efemeridade do mundo real. O poema que ensina a aceitar a fugacidade fixa-a numa forma que resiste ao tempo.</p><h4>O rio</h4><p>O rio, símbolo da passagem do tempo, organiza também o ritmo: versos longos e fluentes imitam a corrente, e o verso curto final de cada estrofe funciona como uma pausa, um “sossego”.</p>`;
+let cur=0,tab="e";
+const tabs=[["e","Estrofe"],["f","Forma"],["c","Forma e conteúdo"]];
+function pane(){const p=$("#pn");p.innerHTML=tab==="e"?`<h4>Estrofe ${cur+1}</h4><p>${R[cur]}</p><p style="color:var(--mu);font-size:.9rem">Clica noutro verso para mudares de estrofe.</p>`:tab==="f"?F:FC;[...$("#tb").children].forEach(b=>b.setAttribute("aria-selected",b.dataset.k===tab))}
+$("#tb").innerHTML=tabs.map(t=>`<button role="tab" data-k="${t[0]}">${t[1]}</button>`).join("");
+$("#tb").onclick=e=>{if(e.target.dataset.k){tab=e.target.dataset.k;pane()}};
+$("#po").innerHTML=[...Array(8)].map((_,s)=>`<div class="st">`+V.slice(s*4,s*4+4).map((v,j)=>`<div class="v" tabindex="0" role="button" data-i="${s*4+j}">${v[0]}</div><div class="sc" hidden></div>`).join("")+`</div>`).join("");
+function toggle(el){const i=+el.dataset.i,sc=el.nextElementSibling;cur=Math.floor(i/4);tab="e";document.querySelectorAll(".v").forEach(x=>x.classList.remove("on"));if(!sc.hidden){sc.hidden=true}else{const t=V[i][1].split(" "),k=t.findIndex(x=>x.includes("*"));sc.innerHTML=t.map((x,n)=>`<span class="${n<k?"":n===k?"k":"t"}">${x.replace("*","").replace(/_/g,"‿")}</span>`).join("")+`<b>${k+1} sílabas métricas${k+1<=10?" (verso curto)":""}</b>`;sc.hidden=false;el.classList.add("on")}pane()}
+$("#po").onclick=e=>{const v=e.target.closest(".v");if(v)toggle(v)};
+$("#po").onkeydown=e=>{if((e.key==="Enter"||e.key===" ")&&e.target.classList.contains("v")){e.preventDefault();toggle(e.target)}};
+pane();
+const Q=[["Qual o objetivo supremo das escolhas filosóficas de Reis?",["A ataraxia, a ausência de perturbação da alma","Vencer o Destino","Sentir tudo de todas as maneiras"],0],
+["O que propõe Reis perante a impossibilidade de vencer o Fado?",["Revoltar-se contra os deuses","Um “fado voluntário”: aceitar com tranquilidade as leis da Natureza","Fugir para o Oriente"],1],
+["Que princípio horaciano segue Reis?",["Carpe diem, sem excessos nem paixões intensas","Ut pictura poesis","Fugere urbem"],0],
+["Qual a diferença entre heterónimo e pseudónimo?",["O heterónimo é só um nome falso","O heterónimo é uma individualidade literária completa, com biografia e estilo próprios","Não há diferença"],1],
+["Em “Vem sentar-te comigo, Lídia”, o rio simboliza…",["A fertilidade","A efemeridade da vida","A força da Natureza"],1],
+["Que recurso é a invocação de Lídia?",["Hipérbole","Ironia","Apóstrofe"],2],
+["Como se relaciona a forma rigorosa da ode com a filosofia de Reis?",["Não há relação","A disciplina formal espelha o autocontrolo estoico","Reflete a excitação da modernidade"],1],
+["Qual a posição de Reis perante a vida?",["Ator ativo e apaixonado","Espectador passivo e disciplinado","Revolucionário"],1]];
+let sc=0,an=0;
+function rq(){sc=an=0;$("#rs").hidden=true;$("#qz").innerHTML=Q.map((q,i)=>`<div class="q"><b>${i+1}. ${q[0]}</b>${q[1].map((o,j)=>`<button class="opt" data-q="${i}" data-o="${j}">${o}</button>`).join("")}</div>`).join("");$("#sc").textContent=`0 / ${Q.length}`}
+$("#qz").onclick=e=>{const b=e.target.closest(".opt");if(!b)return;const i=+b.dataset.q,all=[...document.querySelectorAll(`.opt[data-q="${i}"]`)];if(all[0].dataset.d)return;all.forEach(x=>x.dataset.d=1);const c=Q[i][2];all[c].classList.add("ok");if(+b.dataset.o===c)sc++;else b.classList.add("no");an++;$("#sc").textContent=`${sc} / ${Q.length}`;if(an===Q.length)$("#rs").hidden=false};
+$("#rs").onclick=rq;rq();
+</script>
+</body>
+</html>
